@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron" style="background-color : cyan" >
+    <h2>Welcome!! to</h2>
+    <h1>EBook-Library</h1>
+
+    <p class="lead">Download your favourite book for free</p>
+    
+    
+    <br><br><br>
+    <center>
+        <input type="button" value="Show Books" onclick="location.href='@Url.Action( "Books", "Home") '" />
+        <input type="button" value="Admin Login" onclick="location.href='@Url.Action(  "AdminLogin","Admin")'" />
+    </center>
+
+</div>
+
