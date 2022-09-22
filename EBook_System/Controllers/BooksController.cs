@@ -100,16 +100,6 @@ namespace EBook_System.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
         // GET: Books/Edit/5
         public ActionResult Edit(int id)
         {
@@ -291,36 +281,9 @@ namespace EBook_System.Controllers
 
                 }
 
-
-
-
-
-
-
-
-              
-               
-                
-                
-                
-            
-
             }
             return View();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         [HttpGet]
         public FileResult DownLoadFile(int id)

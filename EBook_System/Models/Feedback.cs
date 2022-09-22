@@ -19,16 +19,18 @@ namespace EBook_System.Models
         public int FId { get; set; }
 
         [DisplayName("Enter Name")]
-        [Required(ErrorMessage = "Category is Required")]
+        [Required(ErrorMessage = "Name is Required")]
         public string name { get; set; }
 
         [DisplayName("Enter Email-Id")]
-        [Required(ErrorMessage = "Category is Required")]
+        [Required(ErrorMessage = "Email-Id is Required")]
+
+        [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
         public string email { get; set; }
 
 
         [DisplayName("Enter Comment")]
-        [Required(ErrorMessage = "Category is Required")]
+        [Required(ErrorMessage = "Comment is Required")]
         public string comment { get; set; }
     }
 }
