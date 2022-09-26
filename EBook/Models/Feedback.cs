@@ -18,18 +18,18 @@ namespace EBook.Models
     {
         public int FId { get; set; }
 
-        [DisplayName("Enter Name")]
+        [DisplayName("Name")]
         [Required(ErrorMessage = "Name is Required")]
         public string name { get; set; }
 
-        [DisplayName("Enter Email-Id")]
+        [DisplayName("Email-Id")]
         [Required(ErrorMessage = "Email-Id is Required")]
 
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
         public string email { get; set; }
 
 
-        [DisplayName("Enter Comment")]
+        [DisplayName("Comment")]
         [Required(ErrorMessage = "Comment is Required")]
         public string comment { get; set; }
     }

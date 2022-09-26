@@ -50,6 +50,7 @@ namespace EBook.Controllers
         {
             db.Feedbacks.Add(f);
             db.SaveChanges();
+            ModelState.Clear();
             return View();
         }
 
@@ -57,7 +58,7 @@ namespace EBook.Controllers
         {
             return View(db.Feedbacks.ToList());
 
-            return View();
+    
         }
     }
 }

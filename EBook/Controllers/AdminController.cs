@@ -34,6 +34,8 @@ namespace EBook.Controllers
 
             }
 
+            ModelState.Clear();
+
             return View();
         }
 
