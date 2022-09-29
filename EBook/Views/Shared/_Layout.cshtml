@@ -22,7 +22,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Home", "Home")</li>
                     <li>@Html.ActionLink("Books", "Books", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @* <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                     <li>@Html.ActionLink("Feedback", "Feedback", "Home")</li>
                 </ul>
                
@@ -31,10 +31,9 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - EBook</p>
-        </footer>
+     <center>   <footer style=" background-color:black">
+            <p style="color:gray">&copy; @DateTime.Now.Year - EBook</p>
+        </footer></center>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
